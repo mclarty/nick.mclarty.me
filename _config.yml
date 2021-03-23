@@ -75,8 +75,8 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: 
-    url: 
+    username:
+    url:
     desc: Follow me on Twitter
     share: false
 
@@ -176,6 +176,13 @@ social:
     username:
     url:
     desc: Share to Hacker News
+    share: false
+
+  - name: PGP
+    icon: key
+    username: mclarty
+    url: /pgp.pub.txt
+    desc: Nick's Public PGP Key
     share: false
 
 # Personal traits
