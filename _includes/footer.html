@@ -23,7 +23,7 @@
 					{% for social in site.social %}
 					{% if social.url != null %}
 					<li>
-						<a href="{{ social.url }}" title="{{ social.desc }}"><i class="fab fa-{{ social.icon }}"></i></a>
+						<a href="{{ social.url }}" title="{{ social.desc }}"><i class="{{ social.icon }}"></i></a>
 					</li>
 					{% endif %}
 					{% endfor %}
