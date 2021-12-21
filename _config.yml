@@ -87,7 +87,7 @@ social:
     username: nick.mclarty
     url: https://www.facebook.com/nick.mclarty
     desc: Friend me on Facebook
-    share: true
+    share: false
 
   - name: GitHub
     icon: fab fa-github
@@ -122,7 +122,7 @@ social:
     username:
     url:
     desc: Follow me on Pinterest
-    share: true
+    share: false
 
   - name: SoundCloud
     icon: fab fa-soundcloud
