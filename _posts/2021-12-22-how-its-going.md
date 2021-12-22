@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Social Media Adventure: How it's going
+title: The Social Media Adventure--How it's going
 author: Nick McLarty
 date: 2021-12-22T13:10:00-06:00
 tags: blog social media
