@@ -1,14 +1,16 @@
 ---
-layout: page
+layout: single
 title: Nick.README
-main_nav: false
+toc: true
+toc_sticky: true
+author_profile: true
 ---
 
-# What is this?
+## What is this?
 
 The following is a user guide for me and how I work. It captures what you can expect out of the average week working with me and how I like to work. I intend to accelerate our working relationship with this document, but it is also not intended as a replacement for personal interactions that will enable us to actually get to know each other.
 
-# About me
+## About me
 
 I started down the path to today in 1999, when I began working as a dispatcher at a moderately-sized police department. Like many small organizations, the person most qualified in a task tends to be the one owning that task--for me that was being the IT person. Over the next ten years, I did everything from desktop support to network engineer, server administrator, and full-stack developer and integrator (my biggest achievement at the time was probably making a Clipper application with a dBase backend exchange data nicely with a PHP/mySQL web application).
 
@@ -20,13 +22,13 @@ In 2019, I joined the Texas A&M System Office of Cybersecurity as the assistant 
 
 In my personal life, I am a husband and father to a five-year-old daughter. My wife and daughter love Disney World, so we travel there often. Then in my (not so) spare time, I am also a pilot and volunteer with [Civil Air Patrol](https://www.gocivilairpatrol.com).
 
-# My availability
+## My availability
 
 I will be working a combination of from home, in the office, and on the road, but I also routinely work in the evening and during the weekend. You may receive emails or Slack messages from me after hours, **but unless it is marked as urgent you should not feel obligated to read or respond to any emails or messages you receive from me outside of your normal hours** (and I apologize in advance for any notifications that the emails or Slack messages may generate).
 
 If I am working from outside the office, you can expect me to be as available as I would be if I was in the office. Very few things are more important than talking to you, so even if you do not see me in the office, feel free to send me a message on Slack. Also, feel free to put a meeting on my calendar. My Tuesdays through Thursdays are generally [timeboxed](https://en.wikipedia.org/wiki/Timeboxing), but you are welcome to send me a meeting invite during those times if the openings on Monday or Friday do not work for you.
 
-# Personal principles / My role
+## Personal principles / My role
 
 My primary job is to set up this team for success and autonomy by ensuring everyone has the necessary tools and resources to be successful. I do this by understanding any challenges or obstacles that team members may be experiencing and engaging the necessary people inside and outside the organization to overcome those obstacles. I also build and maintain relationships with our external stakeholders and ensure that the team understands the needs and expectations of the stakeholders and delivers the best service possible to those stakeholders.
 
@@ -34,13 +36,13 @@ My secondary job is to take on projects that have a System-wide impact--what we 
 
 I assume that you are very good at your job, I am not good at your job, and you will let me know if anything is interfering with you doing your job. I will support you in any way I can to help you carry out your duties and firefight issues, but please communicate to me when those needs arise.
 
-# One-on-Ones
+## One-on-Ones
 
 I begin with 30 minutes every other week with my direct reports. This time is intended to discuss topics of substance, not to provide updates. In the first 10 minutes, we can talk about anything that you are interested in talking about (examples include how you're doing personally and professionally, what you need to be successful, what you wish could be different, how you feel about our team and your teammates, what your career goals are, etc). In the second 10 minutes, we will talk about your large-scale projects and other impactful initiatives within the team. The last 10 minutes are reserved for discussing your career development and team strategies.
 
 I am open to variety in frequency, length, and format of 1:1 meetings if there is anything that you wish to adjust. I will also have a shared project (probably in Asana) for us to prepare meeting topics beforehand so that we can make the most of our time.
 
-# Meetings
+## Meetings
 
 I go to a lot of meetings. I deliberately run with my calendar publicly visible for the team. If you have a question about a meeting on my calendar, ask me. If a meeting is private or confidential, its title and attendees will be hidden from your view. Most of my meetings are neither private nor confidential.
 
@@ -50,12 +52,12 @@ If you send me a presentation deck a reasonable amount of time before a meeting,
 
 If a meeting completes its intended purpose before it is scheduled to end, let’s give the time back to everyone. If it is clear the intended goal will not be achieved in the allotted time, let’s stop the meeting before time is up and determine how to finish the meeting later.
 
-# DRI principle
+## DRI principle
 
 I am a strong believer in the Directly Responsible Individual (or DRI) principle; that for any given task or project, there is always one person named as being directly responsible for its outcome. Each project should exist in Asana, with the project owner identified in the Asana project. Likewise, all tasks should belong to a project (either a specific time-bound project, or a standing project such as the action items from the staff meeting) and also have the DRI set as the task assignee.
 
 There are some areas where the DRI is naturally a team lead, supervisor, or manager, but many times the DRI designation will fall to the team member who has been assigned a task or project. Everyone contributes to the success of the DRI principle by [being an accountable teammate](https://wavelength.asana.com/workstyle-accountability/) and keeping transparency in the progress of tasks and projects.
 
-# Feedback
+## Feedback
 
 There is a formal feedback cycle that occurs annually. During our first time through this cycle, we will draft a proposed set of goals for the next review period. However, I try to provide feedback as soon after seeing the topic of the feedback as possible without interrupting operations. If you would like specific feedback on something, please let me know. I am happy to provide an outside perspective whenever I can.
