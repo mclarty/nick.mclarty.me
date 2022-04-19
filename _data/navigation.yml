@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Blog"
-    url: https://nick.mclarty.blog
   - title: "PGP Key"
     url: /pgp.pub.txt
   # - title: "Sample Collections"
