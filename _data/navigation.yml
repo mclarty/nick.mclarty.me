@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "PGP Key"
-    url: /pgp.pub.txt
+  # - title: "PGP Key"
+  #   url: /pgp.pub.txt
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
