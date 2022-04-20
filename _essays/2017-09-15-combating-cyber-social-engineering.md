@@ -1,8 +1,9 @@
 ---
 title: "Combating Cyber Social Engineering in the Digital Age"
+excerpt: The abstract for my master’s thesis paper. While unfortunately the paper just confirmed suspicions that most anyone in the cybersecurity industry already knows, I felt that it was important to underscore these bits of information for the masses--especially in management and the commercial space.
 ---
 
-_Below is the abstract for my master’s thesis paper. While unfortunately the paper just confirmed suspicions that most anyone in the cybersecurity industry already knows, I felt that it was important to underscore these bits of information for the masses–especially in management and the commercial space._
+_Below is the abstract for my master’s thesis paper. While unfortunately the paper just confirmed suspicions that most anyone in the cybersecurity industry already knows, I felt that it was important to underscore these bits of information for the masses--especially in management and the commercial space._
 
 Efforts made to reduce or eliminate the threat of social engineering have not been effective in addressing the lack of security awareness exhibited by users of cyber resources. Success combating social engineering attacks requires a new approach of user education and improvements to anti-social engineering technology. This study incorporates existing research with surveys designed to identify trends of online Internet behavior and defensive posture from social engineering attacks.
 

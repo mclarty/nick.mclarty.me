@@ -1,8 +1,8 @@
 # main links
 main:
-  # - title: "PGP Key"
-  #   url: /pgp.pub.txt
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Notes"
+    url: /categories/notes/
+  - title: "Essays"
+    url: /essays/
+  - title: "Terms & Privacy Policy"
+    url: /terms/

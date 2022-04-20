@@ -6,7 +6,6 @@ gem "webrick"
 
 gem "jekyll-archives", "~> 2.2"
 
-gem "jekyll-paginate", "~> 1.1"
 
 gem "jekyll-sitemap", "~> 1.4"
 

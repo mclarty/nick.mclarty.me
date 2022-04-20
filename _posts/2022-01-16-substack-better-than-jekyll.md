@@ -1,5 +1,7 @@
 ---
 title: "Substack; is it better than Jekyll?"
+category: notes
+tags: substack jekyll indieweb
 ---
 
 I have been exploring the perfect solution for simple blogging for quite some time. I gave WordPress a good run. Then Medium. Then Jekyll. I’ve gone around the block on blogging solutions so many times that I just can’t pin one or the other down.

@@ -1,5 +1,7 @@
 ---
 title: "The Social Media Adventure–How it’s going"
+category: notes
+tags: social media hey email rss reddit
 ---
 
 Back in January, I wrote about my venture off social media. Unfortunately, because Twitter was so pervasive as a news source, at the time I wasn’t able to completely cut off. In the months that followed, I swung all of my news sources to an RSS reader (hello 2000s!), I moved my email to [HEY](https://hey.com/) (not using Gmail has been a refreshing change of pace), and deleted almost all social media apps off my phone and tablet, except for one I discuss next (although the accounts were left in place).

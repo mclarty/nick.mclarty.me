@@ -1,5 +1,7 @@
 ---
 title: "So Long, Social Media"
+category: notes
+tags: social media
 ---
 
 Every few years, I change opinions on the use of a variety of online services – Google, Facebook, and Twitter among the leaders. I’ve done it all: moved email to ProtonMail, ran my own blog, changed my personal social network from Facebook to Reddit… you name it, I’ve tried it. Until yesterday, I was back on Gmail, followed the news on Twitter, and everything else that just inevitably happens because of the network effect.

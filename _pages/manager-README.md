@@ -1,9 +1,10 @@
 ---
-layout: single
 title: Nick.README
+permalink: /manager-readme/
+last_modified_at: 2022-04-20T10:20:00-05:00
 toc: true
 toc_sticky: true
-author_profile: true
+read_time: true
 ---
 
 ## What is this?
