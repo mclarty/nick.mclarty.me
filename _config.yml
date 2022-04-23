@@ -106,11 +106,9 @@ author:
   avatar           : "/assets/img/bio-photo.jpg"
   bio              : "Cybersecurity Professional. IPv6 Promoter. Pilot. Aggie. Texan."
   location         : "College Station, TX"
+  home             : "https://nick.mclarty.me"
   email            : "nick@mclarty.me"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/nickmclartytx"

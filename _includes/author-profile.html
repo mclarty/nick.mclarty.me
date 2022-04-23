@@ -17,7 +17,7 @@
 
   <div class="author__content">
     {% if author.home %}
-      <a class="p-name p-author" href="{{ author.home | relative_url }}" rel="author"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
+      <a class="p-name p-author u-url" href="{{ author.home | relative_url }}" rel="author me"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
       <h3 class="author__name p-name p-author" itemprop="name">{{ author.name }}</h3>
     {% endif %}
@@ -47,7 +47,7 @@
 
       {% if author.uri %}
         <li>
-          <a class="u-url" href="{{ author.uri }}" itemprop="url" rel="me">
+          <a href="{{ author.uri }}" itemprop="url">
             <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
           </a>
         </li>
