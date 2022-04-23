@@ -13,4 +13,4 @@ gem "jekyll-gist", "~> 1.5"
 
 gem "jekyll-feed", "~> 0.16.0"
 
-gem "minimal-mistakes-jekyll", "~> 4.24"
+gem "jekyll-remote-theme", "~> 0.4.3"
