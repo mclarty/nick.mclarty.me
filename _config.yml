@@ -114,7 +114,7 @@ author:
       url: "https://twitter.com/nickmclartytx"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://mastodon.social/@mclarty"
+      url: "https://mclarty.social/@nick"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "//facebook.com/nickmclarty"
@@ -142,7 +142,7 @@ footer:
       url: "https://twitter.com/NickMcLartyTX"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://mastodon.social/@mclarty"
+      url: "https://mclarty.social/@nick"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -178,6 +178,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README
+  - .sh
 
 keep_files:
   - .git
