@@ -77,28 +77,12 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Social Sharing
-twitter:
-  username               : "NickMcLartyTX"
-facebook:
-  username               : "nickmclarty"
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
-
 
 # Site Author
 author:
@@ -117,13 +101,13 @@ author:
       url: "https://mastodon.social/@mclarty"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "//facebook.com/nickmclarty"
+      url: "https://facebook.com/nickmclarty"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mclarty"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/nmclarty"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://linkedin.com/in/nickmclarty"
@@ -137,34 +121,6 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/NickMcLartyTX"
-    - label: "Mastodon"
-      icon: "fab fa-fw fa-mastodon"
-      url: "https://mastodon.social/@mclarty"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mclarty"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://linkedin.com/in/nickmclarty"
-    - label: "Reddit"
-      icon: "fab fa-fw fa-reddit"
-      url: "https://reddit.com/u/mclarty"
-
 
 # Reading Files
 exclude:
@@ -183,14 +139,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -203,19 +157,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 
 # Outputting
 permalink: /:categories/:title/
 #paginate: 5 # amount of posts to show
 #paginate_path: /page:num/
 timezone: America/Chicago
-
 
 # Plugins (previously gems:)
 plugins:
@@ -234,7 +185,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Archives
 #  Type
@@ -263,7 +213,6 @@ jekyll-archives:
    permalinks:
      category: /categories/:name/
      tag: /tags/:name/
-
 
 # HTML Compression
 # - https://jch.penibelst.de/
