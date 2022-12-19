@@ -123,6 +123,11 @@ footer:
   links:
 
 # Reading Files
+include:
+  - _books
+  - _essays
+  - _pages
+
 exclude:
   - .editorconfig
   - .gitignore
