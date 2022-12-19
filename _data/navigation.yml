@@ -4,5 +4,7 @@ main:
     url: /categories/notes/
   - title: "Essays"
     url: /essays/
+  - title: "Books"
+    url: /books/
   - title: "Terms & Privacy Policy"
     url: /terms/

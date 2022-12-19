@@ -226,6 +226,9 @@ collections:
   essays:
     output: true
     permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -260,6 +263,14 @@ defaults:
       related: true
       show_date: true
       show_updated: false
+  # _books
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: book
+      author_profile: true
+      comments: true
   # Categories
   - scope:
       path: ""
