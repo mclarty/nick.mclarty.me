@@ -1,0 +1,60 @@
+# > title: Name of your timeline entry, university or work place
+# > title-url: Link to your timeline entry, university or work place
+# > date: Time span
+# > subtitle: The description under the title
+# > tags: List of tags you want to associate with the entry
+# > timeline-side: The side on which you want to display the entry: left or right
+
+# Example of a timeline entry
+# - title: airbnb
+#   title-url: https://example.com/
+#   date: Sep 2019 - Present
+#   subtitle: Fullstack Developer
+#   tags:
+#     - tag: React
+#     - tag: Javascript
+#     - tag: Ruby
+#     - tag: Rails
+#   timeline-side: right
+
+- title: The Texas A&M University System
+  title-url: https://cyber.tamus.edu/
+  date: Nov 2019 - Present
+  subtitle: Deputy Chief Information Security Officer
+  timeline-side: right
+
+- title: American Military University
+  title-url: https://amu.apus.edu/
+  date: 2016 - 2017
+  subtitle: M.Sc. Cybersecurity Studies
+  timeline-side: left
+
+- title: Texas A&M Transportation Institute
+  title-url: https://tti.tamu.edu/
+  date: Jan 2012 - Nov 2019
+  subtitle: Chief Information Security Officer
+  timeline-side: right
+
+- title: American Military University
+  title-url: https://amu.apus.edu/
+  date: 2011 - 2013
+  subtitle: B.A. Emergency & Disaster Management
+  timeline-side: left
+
+- title: Texas A&M Transportation Institute
+  title-url: https://tti.tamu.edu/
+  date: Jul 2009 - Jan 2012
+  subtitle: Senior Network Analyst
+  timeline-side: right
+
+- title: Community College of the Air Force
+  title-url: https://www.airuniversity.af.edu/Barnes/CCAF/
+  date: 2009 - 2010
+  subtitle: A.A.S. Criminal Justice
+  timeline-side: left
+
+- title: Northside ISD Police Department
+  title-url: https://www.nisd.net/police/
+  date: Dec 1999 - Jul 2009
+  subtitle: Police Communications Systems Manager
+  timeline-side: right
