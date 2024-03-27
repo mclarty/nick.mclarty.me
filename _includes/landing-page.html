@@ -184,19 +184,19 @@
         </a>
       {% endif %}
 
-      {% if site.readme_download_link != null %}
-        <a class="social-link readme" aria-label="My README" target="_blank"
-          rel="noreferrer" href="{{site.readme_download_link}}"
+      {% if site.pgp_download_link != null %}
+        <a class="social-link keybase" aria-label="Public PGP Key" target="_blank"
+          rel="noreferrer" href="{{site.pgp_download_link}}"
         >
           <svg viewBox="0 0 200 200" class="circle">
             <circle cx="100" cy="100" r="80" />
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#readme" | prepend: site.baseurl }}"></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#keybase" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
-          <span class="label">README</span>
+          <span class="label">Public PGP Key</span>
         </a>
       {% endif %}
 
