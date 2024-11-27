@@ -16,7 +16,7 @@ username: Nick McLarty
 # > set this to your job title, e.g. Fullstack Developer
 typing_text: Cybersecurity Executive
 # email: Your E-Mail address for the email button.
-email: nick@mclarty.me
+email: hello@nick.mclarty.me
 # For every social button you want to display, set your username or userid
 # If you do not use one of the following websites, then leave it empty
 # > twitter_username:
@@ -24,11 +24,11 @@ github_username: mclarty
 #codepen_username: exampleUser
 #dev_username: exampleUser
 linkedin_username: nickmclarty
-twitter_username: NickMcLartyTX
-reddit_username: mclarty
+twitter_username: NickMcLartyFL
+#reddit_username: mclarty
 bitcoin_username: bc1qkwhmslp5vzkdepqtd7e562updkn0fpz6wmqmwv
 goodreads_username: 37251405-nick
-mastodon_username: https://mastodon.social/@mclarty
+#mastodon_username: https://mastodon.social/@mclarty
 orcid_username: 0000-0003-0905-0875
 pgp_download_link: /pgp.pub.txt
 
