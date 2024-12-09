@@ -94,15 +94,12 @@ a {
 }
 
 .layout .card .title {
-  text-align: center;
   position: relative;
 }
 
-.layout .card .subtitle {
-  text-align: center;
-}
-
-.layout .card .description {
+.layout .card .description,
+.layout .card .subtitle,
+.layout .card .title {
   text-align: center;
 }
 
