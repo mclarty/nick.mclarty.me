@@ -22,7 +22,7 @@ export default function Home() {
               style={{ transform: isHovered ? 'scale(1.05)' : 'scale(1)' }}
             >
               <Image
-                src="https://pbs.twimg.com/profile_images/2018676359707385856/scaurkNb.jpg"
+                src="/nick.jpg"
                 alt="Nick McLarty"
                 width={160}
                 height={160}
