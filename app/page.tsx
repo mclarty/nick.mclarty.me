@@ -30,7 +30,6 @@ export default function Home() {
                 priority
               />
             </div>
-            {/* Optional: You can add text or decoration inside the pill here if desired */}
           </div>
 
           <h1 className="text-7xl md:text-[5.2rem] font-bold tracking-tighter mb-4 leading-none">
@@ -46,7 +45,7 @@ export default function Home() {
             Passionate about technology, aviation, and staying informed.
           </p>
 
-          {/* Buttons - Fixed alignment */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="https://x.com/NickMcLarty"
@@ -63,7 +62,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Rest of the page remains the same as before */}
       {/* About Section */}
       <section className="py-24 px-6 max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16">About Me</h2>
@@ -95,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Miami Section */}
+      {/* Celebration Section */}
       <section className="bg-[#111] py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-8">Currently in Celebration, Florida</h2>
