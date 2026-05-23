@@ -33,7 +33,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-7xl md:text-[5.2rem] font-bold tracking-tighter mb-4 leading-none">
-            Hi, I'm Nick
+            Hi, I&apos;m Nick
           </h1>
           
           <p className="text-2xl md:text-3xl text-gray-400 mb-8 tracking-wide">
