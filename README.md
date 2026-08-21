@@ -1,21 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nick.mclarty.me
 
-## Getting Started
+Personal site for Nick McLarty, built with [Astro](https://astro.build).
 
-First, run the development server:
+## Local development
 
 ```bash
-npm run dev
-# or
+bun install
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4321](http://localhost:4321).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun run build
+bun preview
+```
 
 ## Deploy on Cloudflare Pages
 
-Commit the changes to the GitHub repository. Cloudflare Pages will automatically update the production site.
+Cloudflare Pages builds from this repository. Use:
+
+- **Framework preset:** Astro
+- **Build command:** `bun run build` (or `npm run build`)
+- **Output directory:** `dist`

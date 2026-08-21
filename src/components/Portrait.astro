@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import nick from "../assets/nick.jpg";
+
+interface Props {
+  size?: number;
+  eager?: boolean;
+}
+
+const { size = 168, eager = false } = Astro.props;
+---
+
+<div class="portrait" style={`--size: ${size}px`} transition:name="portrait">
+  <Image
+    src={nick}
+    alt="Nick McLarty"
+    width={size}
+    height={size}
+    densities={[1, 2]}
+    loading={eager ? "eager" : "lazy"}
+    fetchpriority={eager ? "high" : undefined}
+  />
+</div>
+
+<style>
+  .portrait {
+    width: var(--size);
+    height: var(--size);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    box-shadow: 0 12px 40px var(--glow);
+    transition: transform 400ms ease;
+  }
+
+  .portrait:hover {
+    transform: scale(1.05);
+  }
+
+  .portrait :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

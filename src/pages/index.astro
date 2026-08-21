@@ -1,0 +1,200 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Portrait from "../components/Portrait.astro";
+import FacetCard from "../components/FacetCard.astro";
+import { site } from "../data/site";
+
+const facets = (await getCollection("facets")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Base>
+  <section class="hero">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="wrap intro">
+      <Portrait eager />
+      <h1>{site.greeting}</h1>
+      <p class="roles">{site.roles.join(" • ")}</p>
+      <p class="lede">
+        {site.tagline}<br />
+        {site.summary}
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href={site.links.x} target="_blank" rel="noreferrer">
+          Follow on 𝕏
+        </a>
+        <a class="btn btn-ghost" href="/about">About me</a>
+      </div>
+    </div>
+    <a class="scroll" href="#about" aria-label="Skip to about section">↓</a>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2>About Me</h2>
+      <div class="grid">
+        {facets.map((facet) => <FacetCard facet={facet} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="place">
+    <div class="wrap">
+      <h2>Currently in {site.location}</h2>
+      <p>{site.locationBlurb}</p>
+    </div>
+  </section>
+
+  <section class="section connect">
+    <div class="wrap">
+      <h2>Let's Connect</h2>
+      <p>{site.connect}</p>
+      <a class="btn btn-solid" href={site.links.x} target="_blank" rel="noreferrer">
+        Message me on 𝕏
+      </a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100svh;
+    margin-top: -4rem;
+    padding: 6.5rem 0 5.5rem;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #0a0a0a, #1a1a2e, #0a0a0a);
+  }
+
+  .glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgb(0 212 255 / 0.08), transparent 70%);
+    pointer-events: none;
+  }
+
+  .intro {
+    position: relative;
+    z-index: 1;
+    max-width: 48rem;
+    text-align: center;
+  }
+
+  .intro :global(.btn-row) {
+    width: 100%;
+  }
+
+  .intro :global(.portrait) {
+    margin: 0 auto 2.4rem;
+  }
+
+  h1 {
+    margin: 0 0 0.85rem;
+    font-size: clamp(3.4rem, 12vw, 5.2rem);
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 0.9;
+  }
+
+  .roles {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    font-size: clamp(1.2rem, 3vw, 1.85rem);
+    letter-spacing: 0.04em;
+  }
+
+  .lede {
+    max-width: 34rem;
+    margin: 0 auto 2.4rem;
+    color: #d1d5db;
+    font-size: 1.25rem;
+    line-height: 1.65;
+  }
+
+  .scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    color: var(--accent);
+    font-size: 1.6rem;
+    text-decoration: none;
+    transform: translateX(-50%);
+    animation: bounce 1.8s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    50% {
+      translate: 0 0.45rem;
+    }
+  }
+
+  .section {
+    padding: 6rem 0;
+  }
+
+  h2 {
+    margin: 0 0 3rem;
+    font-size: clamp(2.2rem, 5vw, 3.1rem);
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .place {
+    padding: 6rem 0;
+    background: var(--bg-card);
+    text-align: center;
+  }
+
+  .place h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  .place p {
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+
+  .connect {
+    max-width: 46rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .connect p {
+    max-width: 36rem;
+    margin: 0 auto 2.4rem;
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 800px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding-block: 5.5rem 4.5rem;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .btn-row :global(.btn) {
+      width: 100%;
+    }
+  }
+</style>

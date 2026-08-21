@@ -1,0 +1,105 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  entries: CollectionEntry<"timeline">[];
+}
+
+const { entries } = Astro.props;
+
+const kindLabel: Record<CollectionEntry<"timeline">["data"]["kind"], string> = {
+  work: "Work",
+  education: "Education",
+  service: "Service",
+};
+---
+
+<ol class="timeline">
+  {
+    entries.map((entry) => (
+      <li class={`item ${entry.data.kind}`}>
+        <span class="kind">{kindLabel[entry.data.kind]}</span>
+        <h3>
+          {entry.data.url ? (
+            <a href={entry.data.url} target="_blank" rel="noreferrer">
+              {entry.data.org}
+            </a>
+          ) : (
+            entry.data.org
+          )}
+        </h3>
+        <p class="role">{entry.data.role}</p>
+        <p class="dates">{entry.data.dates}</p>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0;
+    border-left: 1px solid var(--line);
+  }
+
+  .item {
+    position: relative;
+    padding: 1.35rem 0 1.35rem 1.75rem;
+  }
+
+  .item::before {
+    content: "";
+    position: absolute;
+    left: -0.3rem;
+    top: 1.7rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgb(0 212 255 / 0.12);
+  }
+
+  .kind {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    color: var(--accent);
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+  }
+
+  h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h3 a:hover {
+    color: var(--accent);
+  }
+
+  .role,
+  .dates {
+    margin: 0.3rem 0 0;
+  }
+
+  .role {
+    color: var(--ink);
+  }
+
+  .dates {
+    color: var(--faint);
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.85rem;
+  }
+</style>

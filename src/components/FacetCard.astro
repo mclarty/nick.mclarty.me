@@ -1,0 +1,61 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+import Icon from "./Icon.astro";
+
+interface Props {
+  facet: CollectionEntry<"facets">;
+}
+
+const { facet } = Astro.props;
+const { Content } = await render(facet);
+---
+
+<article class="card">
+  <div class="glyph">
+    <Icon name={facet.data.icon} size={32} />
+  </div>
+  <h3>{facet.data.title}</h3>
+  <div class="body">
+    <Content />
+  </div>
+</article>
+
+<style>
+  .card {
+    padding: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition:
+      border-color 200ms ease,
+      transform 200ms ease;
+  }
+
+  .card:hover {
+    border-color: rgb(0 212 255 / 0.45);
+    transform: translateY(-2px);
+  }
+
+  .glyph {
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--accent);
+    background: rgb(0 212 255 / 0.08);
+    border: 1px solid rgb(0 212 255 / 0.2);
+    border-radius: 1rem;
+  }
+
+  h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.45rem;
+  }
+
+  .body :global(p) {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+</style>
