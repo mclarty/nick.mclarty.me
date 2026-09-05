@@ -1,0 +1,111 @@
+---
+import Base from "../../layouts/Base.astro";
+import { site } from "../../data/site";
+---
+
+<Base
+  title="HeaderCheck Support"
+  description="Support for HeaderCheck: how to get headers, Pro features, and how to contact Nick."
+>
+  <section class="mast">
+    <div class="wrap narrow">
+      <p class="kicker">HeaderCheck</p>
+      <h1>Support</h1>
+      <p class="lede">
+        Quick help for the on-device email authentication analyzer.
+      </p>
+      <div class="prose">
+        <h2>What HeaderCheck does</h2>
+        <p>
+          HeaderCheck shows plain-language SPF, DKIM, and DMARC verdicts from
+          pasted headers or an .eml file. Everything runs on your iPhone or
+          iPad. There is no account and no upload to a developer server.
+        </p>
+
+        <h2>How to get headers on iPhone</h2>
+        <p>
+          Apple Mail does not show raw headers in a convenient copy field. A
+          reliable path is to forward the message as an attachment (or use Share
+          / Open In) and open the .eml in HeaderCheck. In Gmail or iCloud on the
+          web, use Show original / view message source, then paste into the App.
+          The in-app Learn tab walks through these steps.
+        </p>
+
+        <h2>Free and Pro</h2>
+        <p>
+          Paste and core verdicts are available on the free tier. HeaderCheck
+          Pro is a one-time purchase that unlocks PDF export, analysis history
+          beyond the free cap, and .eml import. Purchases are handled by Apple.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Email{" "}
+          <a href={`mailto:${site.email}?subject=HeaderCheck%20Support`}>
+            {site.email}
+          </a>{" "}
+          with the device model, iOS version, and a short description of the
+          issue. Do not send full email headers or message contents unless you
+          intentionally want help reviewing a specific sample.
+        </p>
+
+        <h2>Privacy</h2>
+        <p>
+          See the{" "}
+          <a href="/headercheck/privacy">HeaderCheck Privacy Policy</a> for how
+          data is handled.
+        </p>
+
+        <p class="back">
+          <a href="/headercheck">Back to HeaderCheck</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .mast {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .narrow {
+    max-width: 42rem;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+  }
+
+  .lede {
+    margin: 0 0 1.75rem;
+    max-width: 36rem;
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1.65;
+  }
+
+  .prose {
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: #d1d5db;
+  }
+
+  .prose p {
+    margin: 0 0 1.2rem;
+  }
+
+  .prose h2 {
+    margin: 2rem 0 0.75rem;
+    font-size: clamp(1.35rem, 3vw, 1.7rem);
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+
+  .back {
+    margin-top: 2.5rem;
+    color: var(--faint);
+    font-size: 0.95rem;
+  }
+</style>

@@ -1,0 +1,133 @@
+---
+import Base from "../../layouts/Base.astro";
+import { site } from "../../data/site";
+---
+
+<Base
+  title="HeaderCheck Privacy Policy"
+  description="Privacy policy for HeaderCheck: on-device SPF, DKIM, and DMARC analysis with no account and no upload."
+>
+  <section class="mast">
+    <div class="wrap narrow">
+      <p class="kicker">HeaderCheck</p>
+      <h1>Privacy Policy</h1>
+      <p class="lede">Effective September 5, 2026</p>
+      <div class="prose">
+        <p>
+          HeaderCheck (“the App”) is a privacy-first iOS and iPadOS application
+          that analyzes email authentication headers (SPF, DKIM, and DMARC)
+          entirely on your device from pasted text or an .eml file.
+        </p>
+
+        <h2>Summary</h2>
+        <p>
+          Analysis stays on your device. HeaderCheck does not require an
+          account, does not sign you in, and does not upload headers, message
+          content, or identifiers to a server operated by the developer. There
+          are no analytics or tracking SDKs in the App.
+        </p>
+
+        <h2>Information the App processes</h2>
+        <p>
+          When you paste headers or open an .eml file, the App processes that
+          content locally to show authentication verdicts, alignment hints, and
+          cautious heuristic flags. That content is not transmitted to the
+          developer for analysis.
+        </p>
+
+        <h2>Information stored on your device</h2>
+        <p>
+          If you save analyses to History (subject to free limits, or unlimited
+          with Pro), they are stored locally on your device using Apple’s
+          on-device storage (SwiftData). Deleting the App removes that local
+          data, subject to any backups you manage yourself (for example iCloud
+          device backups controlled by Apple and your settings).
+        </p>
+
+        <h2>Purchases</h2>
+        <p>
+          Optional HeaderCheck Pro is a one-time In-App Purchase processed by
+          Apple through StoreKit. Payment card details are handled by Apple; the
+          developer does not receive your payment card information. Apple’s
+          privacy practices apply to the App Store and purchase processing.
+        </p>
+
+        <h2>No developer-operated tracking</h2>
+        <p>
+          The App does not include third-party analytics, advertising, or crash
+          reporting SDKs that send usage data to the developer. Network access
+          is not required for core analysis.
+        </p>
+
+        <h2>Disclaimer</h2>
+        <p>
+          HeaderCheck reports authentication results found in the headers you
+          provide. It does not guarantee that a message is safe or malicious,
+          and it is not legal or forensic advice.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Privacy questions about HeaderCheck:{" "}
+          <a href={`mailto:${site.email}`}>{site.email}</a>.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          If this policy changes, the updated text will be posted at this URL
+          with a revised effective date.
+        </p>
+
+        <p class="back">
+          <a href="/headercheck">Back to HeaderCheck</a>
+          {" · "}
+          <a href="/headercheck/support">Support</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .mast {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .narrow {
+    max-width: 42rem;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+  }
+
+  .lede {
+    margin: 0 0 1.75rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+
+  .prose {
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: #d1d5db;
+  }
+
+  .prose p {
+    margin: 0 0 1.2rem;
+  }
+
+  .prose h2 {
+    margin: 2rem 0 0.75rem;
+    font-size: clamp(1.35rem, 3vw, 1.7rem);
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+
+  .back {
+    margin-top: 2.5rem;
+    color: var(--faint);
+    font-size: 0.95rem;
+  }
+</style>
